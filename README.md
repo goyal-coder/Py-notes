@@ -175,3 +175,74 @@ Since `a` and `b` have the **same value**, they share the **same memory location
 
 ---
 
+### 📌 Numbers
+
+1. **int**: A normal number.
+2. **float**: A number with decimals.
+3. **complex**: A number with alphabets.
+
+➡️ Generate a random number using the **random** module.
+
+---
+
+### 📌 Strings
+
+1. Strings can be made using **single (' ')**, **double (" ")**, or **triple quotes (""" """)** for multiline.
+2. Strings are **arrays** in Python.
+
+---
+
+### 📌 Slicing
+
+1. **Start & end value** → `string[0:1]`
+2. **Start, end & step** → `string[1:12:2]`
+3. **Negative indexing** → Rarely used, but good to know!
+
+---
+
+### 📌 Concatenation
+
+```python
+python
+CopyEdit
+a = "Hello"
+b = "World"
+c = a + b
+print(c)  # HelloWorld
+
+```
+
+---
+
+### 📌 String Formatting
+
+✅ **f-strings** (modern & preferred)
+
+```python
+python
+CopyEdit
+a = "hello"
+print(f"{a}")  # hello
+
+```
+
+---
+
+### 📌 Escape Characters
+
+| Escape | Meaning |
+| --- | --- |
+| `\'` | Single Quote |
+| `\\` | Backslash |
+| `\n` | New Line |
+| `\r` | Carriage Return |
+| `\t` | Tab |
+| `\b` | Backspace |
+| `\f` | Form Feed |
+| `\ooo` | Octal Value |
+| `\xhh` | Hex Value |
+
+### 📌 String Methods
+
+💡 Learn more: [W3Schools - String Methods](https://www.w3schools.com/python/python_strings_methods.asp) 🚀
+
