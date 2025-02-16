@@ -232,15 +232,15 @@ print(f"{a}")  # hello
 
 | Escape | Meaning |
 | --- | --- |
-| `\'` | Single Quote |
-| `\\` | Backslash |
-| `\n` | New Line |
-| `\r` | Carriage Return |
-| `\t` | Tab |
-| `\b` | Backspace |
-| `\f` | Form Feed |
-| `\ooo` | Octal Value |
-| `\xhh` | Hex Value |
+| `\\'` | Single Quote |
+| `\\\\` | Backslash |
+| `\\n` | New Line |
+| `\\r` | Carriage Return |
+| `\\t` | Tab |
+| `\\b` | Backspace |
+| `\\f` | Form Feed |
+| `\\ooo` | Octal Value |
+| `\\xhh` | Hex Value |
 
 ### 📌 String Methods
 
@@ -297,7 +297,7 @@ Assignment operators are used to assign values to variables:
 | //= | x //= 3 | x = x // 3 |
 | **= | x **= 3 | x = x ** 3 |
 | &= | x &= 3 | x = x & 3 |
-| |= | x |= 3 | x = x | 3 |
+|  | = | x |
 | ^= | x ^= 3 | x = x ^ 3 |
 | >>= | x >>= 3 | x = x >> 3 |
 | <<= | x <<= 3 | x = x << 3 |
@@ -351,30 +351,38 @@ Bitwise operators are used to compare (binary) numbers:
 | Operator | Name | Description | Example |
 | --- | --- | --- | --- |
 | & | AND | Sets each bit to 1 if both bits are 1 | x & y |
-| | | OR | Sets each bit to 1 if one of two bits is 1 | x | y |
+|  |  | OR | Sets each bit to 1 if one of two bits is 1 |
 | ^ | XOR | Sets each bit to 1 if only one of two bits is 1 | x ^ y |
 | ~ | NOT | Inverts all the bits | ~x |
 | << | Zero fill left shift | Shift left by pushing zeros in from the right and let the leftmost bits fall off | x << 2 |
 | >> | Signed right shift | Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off |  |
 
-Opearot precedence
+# Operator precedence
 
-| Operator | Description | Try it |
-| --- | --- | --- |
-| `()` | Parentheses | [Try it »](https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_parentheses) |
-| `**` | Exponentiation | [Try it »](https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_exponent) |
-| `+x`  `-x`  `~x` | Unary plus, unary minus, and bitwise NOT | [Try it »](https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_bitwise_not) |
-| `*`  `/`  `//`  `%` | Multiplication, division, floor division, and modulus | [Try it »](https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_multiplication) |
-| `+`  `-` | Addition and subtraction | [Try it »](https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_subtraction) |
-| `<<`  `>>` | Bitwise left and right shifts | [Try it »](https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_shift) |
-| `&` | Bitwise AND | [Try it »](https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_bitwise_and) |
-| `^` | Bitwise XOR | [Try it »](https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_bitwise_xor) |
-| `|` | Bitwise OR | [Try it »](https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_bitwise_or) |
-| `==`  `!=`  `>`  `>=`  `<`  `<=`  `is`  `is not`  `in`  `not in` | Comparisons, identity, and membership operators | [Try it »](https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_like) |
-| `not` | Logical NOT | [Try it »](https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_not) |
-| `and` | AND | [Try it »](https://www.w3schools.com/python/trypython.asp?filename=demo_precedence_and) |
-| `or` | OR |  |
+| Operator | Description |
+| --- | --- |
+| `()` | Parentheses |
+| `**` | Exponentiation |
+| `+x`  `-x`  `~x` | Unary plus, unary minus, and bitwise NOT |
+| `*`  `/`  `//`  `%` | Multiplication, division, floor division, and modulus |
+| `+`  `-` | Addition and subtraction |
+| `<<`  `>>` | Bitwise left and right shifts |
+| `&` | Bitwise AND |
+| `^` | Bitwise XOR |
+| ` | ` |
+| `==`  `!=`  `>`  `>=`  `<`  `<=`  `is`  `is not`  `in`  `not in` | Comparisons, identity, and membership operators |
+| `not` | Logical NOT |
+| `and` | AND |
+| `or` | OR |
 
-Mostly Asked in interview
+Asked in interview
 
+dont add any extra topics just make these kind of fun and engaging . also give me it in code romat coz i uploaded  this on github. and add something in these topics itself if i forgot . i mean make it more funny
 
+# Lists
+
+Most important in arrays i think so far.
+
+List items are ordered, changeable, and allow duplicate values.
+
+accepts every type of data.
