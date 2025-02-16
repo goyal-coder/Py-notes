@@ -246,9 +246,5 @@ print(f"{a}")  # hello
 
 💡 Learn more: [W3Schools - String Methods](https://www.w3schools.com/python/python_strings_methods.asp) 🚀
 
-### Typecasting
 
-It is the method to change the type of a variable.
-
-like str(x), int(x)
 
