@@ -1,250 +1,160 @@
-## What is Python?
+## Python Full Course Notes
 
-Python is a **popular programming language** created by **Guido van Rossum** and released in **1991**.
+### Introduction to Python
+- Python is an interpreted, high-level, and general-purpose programming language.
+- Created by Guido van Rossum in 1991.
+- Python follows a simple and readable syntax similar to English.
 
-## Why Python?
+### Variables and Data Types
+- Variables store values and do not require explicit declaration.
+- Common data types:
+  - `int` (integer)
+  - `float` (decimal numbers)
+  - `str` (string)
+  - `bool` (boolean - True/False)
+  - `list` (ordered, mutable collection)
+  - `tuple` (ordered, immutable collection)
+  - `dict` (key-value pairs)
+  - `set` (unordered collection of unique elements)
 
-1. Works on different platforms (Windows, Mac, Linux, etc.).
-2. Simple and easy-to-read syntax.
-3. Executes code **line by line** (interpreted language).
+### Basic Input and Output
+- `input()` is used to take user input.
+- `print()` is used to display output.
+- Type casting can be done using `int()`, `float()`, `str()`, etc.
 
-## Syntax
+### Operators
+- Arithmetic operators: `+`, `-`, `*`, `/`, `//`, `%`, `**`
+- Comparison operators: `==`, `!=`, `>`, `<`, `>=`, `<=`
+- Logical operators: `and`, `or`, `not`
+- Assignment operators: `=`, `+=`, `-=`, `*=`, `/=`, etc.
 
-Python uses **indentation** instead of braces `{}`. Indentation matters a lot in Python!
-
----
-
-## 🔗 Practice Links
-
-- [**Quiz**](https://pynative.com/basic-python-quiz-for-beginners/)
-- [**Questions**](https://technovlogs.com/30-python-programming-questions-on-operators-and-expressions/)
-- [**W3Resource**](https://www.w3resource.com/python-exercises/)
-
----
-
-## Comments in Python
-
-### 1. Normal Comment
-
-```python
-# This is a comment
-
-```
-
-### 2. Multiline Comment
-
-```python
-"""
-This is a multiline comment.
-It spans multiple lines.
-"""
-
-```
-
-### 3. Docstring
-
-- **Written inside a function**, right after its declaration.
-- **Not a comment** but a description of what the function does.
-- **Can be printed** using `print(function_name.__doc__)`.
+### Conditional Statements
+- `if` statement executes code if a condition is true.
+- `if-else` provides an alternative execution path.
+- `if-elif-else` allows multiple conditions to be checked.
 
 Example:
-
 ```python
-def greet():
-    """This function prints a greeting message."""
-    print("Hello, world!")
-
+num = int(input("Enter a number: "))
+if num > 0:
+    print("Positive")
+elif num < 0:
+    print("Negative")
+else:
+    print("Zero")
 ```
 
----
-
-## Variables in Python
-
-- No need to **declare** a variable type like JavaScript.
-- **Case-sensitive** (`age`, `Age`, and `AGE` are different variables).
-
-### Typecasting
-
-- Convert one data type to another using functions like `str()`, `int()`, `float()`, etc.
-
-```python
-x = 6
-print(str(x))  # '6' (string)
-
-```
-
-### Get Variable Type
-
-```python
-y = 10.5
-print(type(y))  # <class 'float'>
-
-```
-
-### Variable Naming Rules
-
-✅ Must **start** with a letter or an underscore `_`
-
-✅ Can contain **letters, numbers, and underscores** (`A-z, 0-9, _`)
-
-❌ Cannot **start** with a number
-
-❌ Case-sensitive (`myVar`, `Myvar`, `MYVAR` are different)
-
-### Assign Multiple Values
-
-```python
-x, y, z = 1, 2, 3
-
-```
-
-Useful in many programs!
-
-### Assign One Value to Multiple Variables
-
-```python
-x = y = z = 10
-
-```
-
-### Global Variables
-
-- A variable declared **outside** a function is **global**.
-- Use `global` keyword to modify it inside a function.
+### Loops
+- `for` loop is used for iterating over a sequence.
+- `while` loop executes as long as a condition is true.
+- Loop control statements:
+  - `break` exits the loop.
+  - `continue` skips the current iteration.
+  - `pass` is a placeholder.
 
 Example:
-
 ```python
-x = "awesome"
-
-def myfunc():
-    global x
-    x = "fantastic"
-
-myfunc()
-print("Python is " + x)  # Output: Python is fantastic
-
+for i in range(5):
+    print(i)
 ```
 
----
-
-## Data Types in Python
-
-| **Category** | **Data Types** |
-| --- | --- |
-| **Text Type** | `str` |
-| **Numeric Types** | `int`, `float`, `complex` |
-| **Sequence Types** | `list`, `tuple`, `range` |
-| **Mapping Type** | `dict` |
-| **Set Types** | `set`, `frozenset` |
-| **Boolean Type** | `bool` |
-| **Binary Types** | `bytes`, `bytearray`, `memoryview` |
-| **None Type** | `NoneType` |
-
-There is also a **`range`** class:
-
-```python
-type(range(5))  # Output: <class 'range'>
-
-```
-
----
-
-## Understanding `id()` in Python
-
-Python **optimizes memory** by assigning the same ID to variables with the same immutable values.
+### Functions
+- Functions are defined using `def` keyword.
+- Parameters allow passing data into functions.
+- `return` statement returns a value.
 
 Example:
-
 ```python
-a = 10
-b = 10
-print(id(a))  # Same ID
-print(id(b))  # Same ID
-
-c = 20
-d = 20
-e = 20
-print(id(c))  # Same ID for all three
-print(id(d))
-print(id(e))
-
+def add(a, b):
+    return a + b
+print(add(3, 4))
 ```
 
-Since `a` and `b` have the **same value**, they share the **same memory location**. Comparing them (`a == b`) will return `True`.
+### Lists
+- Lists store multiple items in a single variable.
+- Lists are mutable (can be changed).
+- Common methods: `append()`, `remove()`, `pop()`, `sort()`, `reverse()`.
 
----
-
-### 📌 Numbers
-
-1. **int**: A normal number.
-2. **float**: A number with decimals.
-3. **complex**: A number with alphabets.
-
-➡️ Generate a random number using the **random** module.
-
----
-
-### 📌 Strings
-
-1. Strings can be made using **single (' ')**, **double (" ")**, or **triple quotes (""" """)** for multiline.
-2. Strings are **arrays** in Python.
-
----
-
-### 📌 Slicing
-
-1. **Start & end value** → `string[0:1]`
-2. **Start, end & step** → `string[1:12:2]`
-3. **Negative indexing** → Rarely used, but good to know!
-
----
-
-### 📌 Concatenation
-
+Example:
 ```python
-python
-CopyEdit
-a = "Hello"
-b = "World"
-c = a + b
-print(c)  # HelloWorld
-
+my_list = [1, 2, 3]
+my_list.append(4)
+print(my_list)
 ```
 
----
+### Tuples
+- Similar to lists but immutable.
+- Defined using parentheses `()`.
 
-### 📌 String Formatting
-
-✅ **f-strings** (modern & preferred)
-
+Example:
 ```python
-python
-CopyEdit
-a = "hello"
-print(f"{a}")  # hello
-
+tuple1 = (1, 2, 3)
+print(tuple1[0])
 ```
 
+### Dictionaries
+- Stores key-value pairs.
+- Access elements using keys.
+
+Example:
+```python
+my_dict = {"name": "Alice", "age": 25}
+print(my_dict["name"])
+```
+
+### Sets
+- Unordered collection of unique items.
+
+Example:
+```python
+my_set = {1, 2, 3, 3}
+print(my_set)
+```
+
+### File Handling
+- Opening a file: `open('filename', 'mode')`
+- Modes: `r` (read), `w` (write), `a` (append), `r+` (read and write).
+
+Example:
+```python
+with open("test.txt", "w") as f:
+    f.write("Hello, world!")
+```
+
+### Exception Handling
+- `try` and `except` blocks handle errors.
+
+Example:
+```python
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+```
+
+### Object-Oriented Programming (OOP)
+- Classes and Objects.
+- Inheritance, Polymorphism, Encapsulation, Abstraction.
+
+Example:
+```python
+class Car:
+    def __init__(self, brand):
+        self.brand = brand
+    def show(self):
+        print("Car brand:", self.brand)
+
+car1 = Car("Toyota")
+car1.show()
+```
+
+### Additional Topics
+- **Lambda Functions**: `lambda x, y: x + y`
+- **Map, Filter, Reduce**: Used for functional programming.
+- **Regular Expressions**: `re` module for pattern matching.
+- **Multithreading**: `threading` module for parallel execution.
+- **Database Connectivity**: `sqlite3` for database operations.
+- **APIs and Web Scraping**: `requests`, `BeautifulSoup` for web data.
+
 ---
-
-### 📌 Escape Characters
-
-| Escape | Meaning |
-| --- | --- |
-| `\'` | Single Quote |
-| `\\` | Backslash |
-| `\n` | New Line |
-| `\r` | Carriage Return |
-| `\t` | Tab |
-| `\b` | Backspace |
-| `\f` | Form Feed |
-| `\ooo` | Octal Value |
-| `\xhh` | Hex Value |
-
-### 📌 String Methods
-
-💡 Learn more: [W3Schools - String Methods](https://www.w3schools.com/python/python_strings_methods.asp) 🚀
-
-
-
+These notes cover essential Python topics with examples. More details can be added based on further learning! 🚀
