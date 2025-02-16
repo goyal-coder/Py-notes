@@ -532,3 +532,62 @@ Before 3.7nth version dict were unordered.
 # Methods
 
 a bit of [methods](https://www.w3schools.com/python/python_dictionaries_methods.asp) are different.
+
+# If else statements
+
+I think these are easy once you get the point.
+
+Indentation is very important.
+
+# elif
+
+elif is used to tell another  statment between if and else.
+
+# short hand if
+
+if a > b: print("a is greater than b")
+
+i dont like this
+
+# pass statement
+
+we use pass when we dont want the code inside if to be executed then we can use pass.
+
+# While loops
+
+They can be scary coz sometimes these just keeps running that why i use for mostly.
+
+The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.
+
+# continue statement
+
+skips the condition defined inside continue statement and keeps continuing the loop.
+
+# Else statement with while loop
+
+This is asked in interviews 
+
+With the else statement we can run a block of code once when the condition no longer is true.
+
+# For loops
+
+for loops are easy.
+
+Both of the continue and break statements are used here.
+
+The range is also used.
+
+for x in range(6):
+
+print(x)
+
+# Else in For Loop
+
+The `else` keyword in a `for` loop specifies a block of code to be executed when the loop is finished. also the hottest topic for freshers interview.
+
+# Example
+
+Print all numbers from 0 to 5, and print a message when the loop has ended:
+
+for x in range(6):  print(x)else:  print("Finally finished!")
+
