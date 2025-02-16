@@ -157,4 +157,3 @@ car1.show()
 - **APIs and Web Scraping**: `requests`, `BeautifulSoup` for web data.
 
 ---
-These notes cover essential Python topics with examples. More details can be added based on further learning! 🚀
