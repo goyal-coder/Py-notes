@@ -506,3 +506,29 @@ print(type(thistuple))
 # Methods
 
 all the methods are same as list only remember you cant customize the tuples so you’ll have to store it in a new variable when customizing.
+
+# Set
+
+Sets are used to store multiple items in a single variable.
+
+A set is a collection which is *unordered*, *unchangeable**, and *unindexed*.
+
+thisset = {"apple", "banana", "cherry"}
+
+Important thing is these give random indexes while printing and duplicates arent allowed.
+
+# Methods
+
+[methods](https://www.w3schools.com/python/python_sets_methods.asp) are kind of different.
+
+# Dictionaries
+
+Dictionaries are used to store data values in key:value pairs.
+
+A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+
+Before 3.7nth version dict were unordered.
+
+# Methods
+
+a bit of [methods](https://www.w3schools.com/python/python_dictionaries_methods.asp) are different.
