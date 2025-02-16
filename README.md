@@ -480,3 +480,29 @@ try to use extend when adding a list it breaks down the values on its own.
 # List methods
 
 [Methods](https://www.w3schools.com/python/python_lists_methods.asp)
+
+# Tuples
+
+Tuples are used to store multiple items in a single variable.
+
+A tuple is a collection which is ordered and **unchangeable and allow duplicate values.**
+
+thistuple = ("apple", "banana", "cherry")
+
+# Tuple with one item
+
+#tuple
+
+thistuple = ("apple",)
+
+print(type(thistuple))
+
+#String
+
+thistuple = ("apple")
+
+print(type(thistuple))
+
+# Methods
+
+all the methods are same as list only remember you cant customize the tuples so you’ll have to store it in a new variable when customizing.
