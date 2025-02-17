@@ -229,7 +229,7 @@ a = 10
 b = 10
 print(id(a))  # Same ID
 print(id(b))  # Same IDname, age, marks = input("Enter your Name, Age, Percentage separated by space ").split()
-print("\n")
+print("\\n")
 print("User Details: ", name, age, marks)
 
 ```
@@ -281,10 +281,10 @@ print(f"{a}")  # hello
 
 | Escape | Meaning |
 | --- | --- |
-| `\\'` | Single Quote |
-| `\\\\` | Backslash |
-| `\\n` | New Line |
-| `\\t` | Tab |
+| `\\\\'` | Single Quote |
+| `\\\\\\\\` | Backslash |
+| `\\\\n` | New Line |
+| `\\\\t` | Tab |
 
 ### 📌 String Methods
 
@@ -381,6 +381,7 @@ Python divides the operators into different groups:
 
 - Lists are ordered, changeable, and allow duplicate values.
 - They can store multiple data types.
+- For more list methods visit w3schools.
 
 ### Changing Item Value
 
@@ -557,6 +558,8 @@ while i < 6:
     i += 1
 else:
     print("Loop finished!")
+    
+    #mostly asked in interviews
 
 ```
 
@@ -578,8 +581,94 @@ for x in range(6):
 else:
     print("Finally finished!")
 
+ #mostly asked in interviews
 ```
 
 ---
 
-##
+## 
+
+# Functions
+
+- block of code used to make some functions that can be used many times.
+
+### Two types of functions
+
+1. built-in: range is a built in function.
+2. User-defined: we create a function.
+
+### Imp concepts
+
+1. Docstring
+2. Calling function
+3. Parameters
+4. Return
+5. Scope
+6. nonlocal keyword: used for variable inside a function inside a function.
+
+### Python function arguments
+
+1. Positional arguments
+2. keyword arguments
+3. Default arguments
+4. Variable-length arguments: *args and **kargs.
+
+# Recursive function
+
+function that calls itself again and again.
+
+**The advantages of the recursive function are:**
+
+1. By using recursive, we can reduce the length of the code.
+2. The readability of code improves due to code reduction.
+3. Useful for solving a complex problem
+
+**The disadvantage of the recursive function:**
+
+1. The recursive function takes more memory and time for execution.
+2. Debugging is not easy for the recursive function.
+
+## Lambda function/anonymous
+
+**Syntax of `lambda` function:**
+
+```python
+lambda: argument_list:expression
+```
+
+**Example : Program for even number with a lambda function**
+
+`l = [10, 5, 12, 78, 6, 1, 7, 9]
+even_nos = list(filter(lambda x: x % 2 == 0, l))
+print("Even numbers are: ", even_nos)`
+
+# Modules
+
+Modules are nothing but a file containing some kind of code which will make it easier to program something. we borrow the code basically.
+
+**Types of modules:**
+
+1. Build in modules: comes with default py installation.
+2. User-defined: we install and then use these like pandas.
+
+### Rename a module
+
+`from <module_name> import <name> as <alternative_name>`
+
+or we can say that
+
+`from math import random as rand`
+
+We can also import all by usign `from math import*`  which is not a good practice at all.
+
+# OOPS
+
+There are so many  things to learn in Oops. check [oops](https://pynative.com/python/object-oriented-programming/).
+
+# Exception handling
+
+1. Try-except-finally
+2. Raise
+3. Exception chaining
+4. Build in exceptions
+5. Custom exceptions
